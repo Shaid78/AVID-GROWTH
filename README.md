@@ -30,3 +30,70 @@ Unlike conventional startup evaluation platforms that rely on static questionnai
 - 🧠 **Explainability Panel** - Transparent reasoning for every recommendation
 
 ## 🏗️ Architecture
+┌─────────────────────────────────────────────────────────────┐
+│ Presentation Layer │
+│ Next.js PWA + D3.js Visualizations │
+├─────────────────────────────────────────────────────────────┤
+│ Application Layer │
+│ Chief Orchestrator Agent + Adaptive Interview Engine │
+├─────────────────────────────────────────────────────────────┤
+│ Business Logic Layer │
+│ 19 Domain Intelligence Agents (Specialized) │
+├─────────────────────────────────────────────────────────────┤
+│ Knowledge Layer │
+│ Business Rules | Knowledge Graph | Industry Benchmarks │
+│ Historical Cases | Evaluation Rubrics | Confidence Rules │
+├─────────────────────────────────────────────────────────────┤
+│ Infrastructure Layer │
+│ Docker | PostgreSQL | Redis | Ollama │
+└─────────────────────────────────────────────────────────────┘
+
+
+
+## 🛠️ Technology Stack
+
+### Frontend
+- Next.js 14 (React Framework)
+- TypeScript
+- Tailwind CSS
+- D3.js (Visualizations)
+- PWA (Progressive Web App)
+
+### Backend
+- Python 3.10+
+- FastAPI
+- SQLAlchemy
+- Celery + Redis
+- Ollama (Local LLM Inference)
+
+### Database
+- PostgreSQL 15 (with pgvector)
+- Redis (Cache + Queue)
+
+### DevOps
+- Docker & Docker Compose
+- GitHub Actions (CI/CD)
+- Kubernetes (Deployment)
+
+## 📦 Installation
+
+### Prerequisites
+- Node.js 18+
+- Python 3.10+
+- Docker & Docker Compose
+- Git
+
+### Quick Start with Docker
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/avid-growth.git
+cd avid-growth
+
+# Start all services
+docker-compose up
+
+# Access the application
+# Frontend: http://localhost:3000
+# Backend API: http://localhost:8000
+# API Docs: http://localhost:8000/docs
